@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Notes app</title>
+	</head>
+	<body>
+		<h1>Notes App</h1>
+		<h2>Take notes and never forget</h2>
+		<input type="text" placeholder="Filter note" id="filter-note" />
+		<select name="" id="sortBy">
+			<option value="byEdit">Sort by last edited</option>
+			<option value="byCreated">Sort by create recent</option>
+			<option value="byAlphabet">Sort by alphabetically</option>
+		</select>
+		<ul id="notes"></ul>
+		<!-- <p class="note">Some text</p>
+		<p class="note">This application was created by Long Vo</p> -->
+		<form action="" id="add-note">
+			<input type="text" name="newNote" placeholder="Enter note" />
+			<input type="submit" value="Add note" />
+			<label for="">
+				<input type="checkbox" name="" id="for-fun" />
+				Check for fun
+			</label>
+			<button id="remove-all">Remove all notes</button>
+		</form>
+	</body>
+	<script src="notes-app.js"></script>
+</html>
