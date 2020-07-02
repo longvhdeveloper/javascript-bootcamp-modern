@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit note</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="note-title" placeholder="Note title" />
+    </div>
+    <br />
+    <div>
+      <textarea name="" id="note-body" cols="30" rows="10" placeholder="Note body"></textarea>
+    </div>
+    <br />
+    <span id="last-edited"></span>
+    <br />
+    <div>
+      <button id="remove-note">Remove note</button>
+      <a href="/index.html">Back</a>
+    </div>
+  </body>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <script src="note-functions.js"></script>
+  <script src="note-edit.js"></script>
+</html>
