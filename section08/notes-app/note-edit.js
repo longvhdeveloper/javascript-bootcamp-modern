@@ -1,3 +1,4 @@
+'use strict'
 const id = location.hash.substring(1)
 let notes = getSavedNotes()
 
