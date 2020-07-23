@@ -4,20 +4,37 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "live-server boilerplate/public",
+    "webpack": "webpack --watch",
+    "build": "node_modules/.bin/babel ./boilerplate/src/index.js --out-file ./boilerplate/public/scripts/bundle.js --presets env --watch",
+    "dev-server": "webpack-dev-server --mode development",
+    "prod": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "eslint": "^7.1.0",
     "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "live-server": "^1.2.1"
+    "@babel/core": "^7.10.5",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "live-server": "^1.2.1",
+    "moment": "^2.27.0",
+    "uuid": "^8.2.0",
+    "validator": "^13.1.1",
+    "webpack": "^4.43.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }
